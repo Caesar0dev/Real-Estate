@@ -4,19 +4,19 @@ import ncNanoId from "@/utils/ncNanoId";
 export const MEGAMENU_TEMPLATES: NavItemType[] = [
   {
     id: ncNanoId(),
-    href: "/#",
+    href: "#",
     name: "Home Page",
     children: [
-      { id: ncNanoId(), href: "/", name: "Home  1" },
+      { id: ncNanoId(), href: "#", name: "Home  1" },
       { id: ncNanoId(), href: "/home-2", name: "Home  2", isNew: true },
-      { id: ncNanoId(), href: "/", name: "Header  1" },
+      { id: ncNanoId(), href: "#", name: "Header  1" },
       { id: ncNanoId(), href: "/home-2", name: "Header  2", isNew: true },
-      { id: ncNanoId(), href: "/", name: "Coming Soon" },
+      { id: ncNanoId(), href: "#", name: "Coming Soon" },
     ],
   },
   {
     id: ncNanoId(),
-    href: "/#",
+    href: "#",
     name: "Shop Pages",
     children: [
       { id: ncNanoId(), href: "/collection", name: "Category Page 1" },
@@ -29,7 +29,7 @@ export const MEGAMENU_TEMPLATES: NavItemType[] = [
   },
   {
     id: ncNanoId(),
-    href: "/#",
+    href: "#",
     name: "Other Pages",
     children: [
       { id: ncNanoId(), href: "/checkout", name: "Checkout Page" },
@@ -42,7 +42,7 @@ export const MEGAMENU_TEMPLATES: NavItemType[] = [
   },
   {
     id: ncNanoId(),
-    href: "/#",
+    href: "#",
     name: "Blog Page",
     children: [
       { id: ncNanoId(), href: "/blog", name: "Blog Page" },
@@ -59,7 +59,7 @@ export const MEGAMENU_TEMPLATES: NavItemType[] = [
 const OTHER_PAGE_CHILD: NavItemType[] = [
   {
     id: ncNanoId(),
-    href: "/",
+    href: "#",
     name: "Home Demo 1",
   },
   {

@@ -6,19 +6,19 @@ import Link from "next/link";
 const DEMO_PAGINATION: CustomLink[] = [
   {
     label: "1",
-    href: "/",
+    href: "#",
   },
   {
     label: "2",
-    href: "/",
+    href: "#",
   },
   {
     label: "3",
-    href: "/",
+    href: "#",
   },
   {
     label: "4",
-    href: "/",
+    href: "#",
   },
 ];
 
