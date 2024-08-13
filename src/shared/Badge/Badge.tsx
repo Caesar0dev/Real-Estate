@@ -23,7 +23,9 @@ const Badge: FC<BadgeProps> = ({
           hasHover ? "hover:bg-pink-800" : ""
         }`;
       case "red":
-        return `text-red-800 bg-red-100 ${hasHover ? "hover:bg-red-800" : ""}`;
+        return `text-red-800 bg-red-100 ${
+          hasHover ? "hover:bg-red-800" : ""
+        }`;
       case "gray":
         return `text-gray-800 bg-gray-100 ${
           hasHover ? "hover:bg-gray-800" : ""

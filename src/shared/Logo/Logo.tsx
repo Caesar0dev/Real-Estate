@@ -17,7 +17,7 @@ const Logo: React.FC<LogoProps> = ({
 }) => {
   return (
     <Link
-      href={"/home-2"}
+      href={"/"}
       className={`ttnc-logo inline-block text-slate-600 ${className}`}
     >
       {/* THIS USE FOR MY CLIENT */}
