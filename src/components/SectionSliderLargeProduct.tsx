@@ -73,7 +73,7 @@ const SectionSliderLargeProduct: FC<SectionSliderLargeProductProps> = ({
               <li className={`glide__slide`} key={index}>
                 <MyCollectionCard
                   name={product.name}
-                  price={product.price}
+                  // price={product.price}
                   imgs={product.images}
                   description={product.desc}
                 />

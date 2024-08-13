@@ -36,22 +36,22 @@ export const DEMO_LARGE_PRODUCTS = [
   {
     id: 1,
     images: [full1Img, full11Img, full12Img, full13Img],
-    name: "Suede Bomber Jacket",
-    desc: "Orange",
+    name: "Renovating a Living Room? Experts Share Their Secrets",
+    desc: "Admin",
     price: 52,
   },
   {
     id: 2,
     images: [full2Img, full21Img, full22Img, full23Img],
-    name: "Downtown Pet Tote",
-    desc: "Black and Orange",
+    name: "7 home trends that will shape your house in 2021",
+    desc: "Admin",
     price: 88,
   },
   {
     id: 3,
     images: [full3Img, full31Img, full32Img, full33Img],
-    name: "Cader Leather Sneakers",
-    desc: "3 Sizes Available",
+    name: "10 Brilliant Ways To Decorate Your Home",
+    desc: "Admin",
     price: 60,
   },
 ];
