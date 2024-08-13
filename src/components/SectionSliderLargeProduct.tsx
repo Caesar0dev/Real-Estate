@@ -86,7 +86,7 @@ const SectionSliderLargeProduct: FC<SectionSliderLargeProductProps> = ({
                   <div className="h-[410px] bg-black/5 dark:bg-neutral-800"></div>
                   <div className="absolute inset-y-6 inset-x-10  flex flex-col items-center justify-center">
                     <div className="flex items-center justify-center relative">
-                      <span className="text-xl font-semibold">More items</span>
+                      <span className="text-xl font-semibold">More Properties</span>
                       <svg
                         className="absolute left-full w-5 h-5 ml-2 rotate-45 group-hover:scale-110 transition-transform"
                         viewBox="0 0 24 24"

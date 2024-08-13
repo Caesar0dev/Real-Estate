@@ -11,9 +11,9 @@ import SectionPromo1 from "@/components/SectionPromo1";
 import { SPORT_PRODUCTS } from "@/data/data";
 import SectionGridFeatureItems from "@/components/SectionGridFeatureItems";
 
-function PageHome2() {
+function PageHome() {
   return (
-    <div className="nc-PageHome2 relative overflow-hidden">
+    <div className="nc-PageHome relative overflow-hidden">
       <div className="container px-4">
         <SectionHero3 />
       </div>
@@ -24,7 +24,7 @@ function PageHome2() {
         {/* SECTION */}
         <SectionSliderProductCard
           data={SPORT_PRODUCTS.filter((_, i) => i < 8)}
-          subHeading="New Sports equipment"
+          subHeading="New House"
         />
 
         {/* SECTION */}
@@ -49,4 +49,4 @@ function PageHome2() {
   );
 }
 
-export default PageHome2;
+export default PageHome;

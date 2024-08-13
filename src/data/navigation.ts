@@ -7,11 +7,7 @@ export const MEGAMENU_TEMPLATES: NavItemType[] = [
     href: "#",
     name: "Home Page",
     children: [
-      { id: ncNanoId(), href: "#", name: "Home  1" },
-      { id: ncNanoId(), href: "/home-2", name: "Home  2", isNew: true },
-      { id: ncNanoId(), href: "#", name: "Header  1" },
-      { id: ncNanoId(), href: "/home-2", name: "Header  2", isNew: true },
-      { id: ncNanoId(), href: "#", name: "Coming Soon" },
+      { id: ncNanoId(), href: "#", name: "Home" },
     ],
   },
   {
@@ -19,7 +15,7 @@ export const MEGAMENU_TEMPLATES: NavItemType[] = [
     href: "#",
     name: "Shop Pages",
     children: [
-      { id: ncNanoId(), href: "/collection", name: "Category Page 1" },
+      { id: ncNanoId(), href: "/properties", name: "Category Page 1" },
       { id: ncNanoId(), href: "/collection-2", name: "Category Page 2" },
       { id: ncNanoId(), href: "/product-detail", name: "Product Page 1" },
       { id: ncNanoId(), href: "/product-detail-2", name: "Product Page 2" },
@@ -60,22 +56,17 @@ const OTHER_PAGE_CHILD: NavItemType[] = [
   {
     id: ncNanoId(),
     href: "#",
-    name: "Home Demo 1",
+    name: "Home",
   },
   {
     id: ncNanoId(),
-    href: "/home-2",
-    name: "Home Demo 2",
-  },
-  {
-    id: ncNanoId(),
-    href: "/collection",
+    href: "/properties",
     name: "Category Pages",
     type: "dropdown",
     children: [
       {
         id: ncNanoId(),
-        href: "/collection",
+        href: "/properties",
         name: "Category page 1",
       },
       {
@@ -180,28 +171,27 @@ const OTHER_PAGE_CHILD: NavItemType[] = [
 export const NAVIGATION_DEMO_2: NavItemType[] = [
   {
     id: ncNanoId(),
-    href: "/collection",
-    name: "Men",
+    href: "/home",
+    name: "Home",
+  },
+  {
+    id: ncNanoId(),
+    href: "/properties",
+    name: "Properties",
+  },
+  {
+    id: ncNanoId(),
+    href: "/properties",
+    name: "Contact Us",
   },
   {
     id: ncNanoId(),
     href: "/collection-2",
-    name: "Women",
+    name: "About Us",
   },
   {
     id: ncNanoId(),
-    href: "/collection",
-    name: "Beauty",
-  },
-
-  {
-    id: ncNanoId(),
-    href: "/collection-2",
-    name: "Sport",
-  },
-  {
-    id: ncNanoId(),
-    href: "/collection",
+    href: "/properties",
     name: "Templates",
     type: "megaMenu",
     children: MEGAMENU_TEMPLATES,

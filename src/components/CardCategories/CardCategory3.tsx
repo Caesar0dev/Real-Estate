@@ -21,7 +21,7 @@ const CardCategory3: FC<CardCategory3Props> = ({
 }) => {
   return (
     <Link
-      href={"/collection"}
+      href={"/properties"}
       className={`nc-CardCategory3 block ${className}`}
     >
       <div

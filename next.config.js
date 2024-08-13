@@ -4,6 +4,15 @@ const nextConfig = {
     appDir: true,
     typedRoutes: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/home',
+        permanent: true,
+      },
+    ]
+  },
   images: {
     remotePatterns: [
       {
