@@ -10,10 +10,10 @@ import ButtonPrimary from "@/shared/Button/ButtonPrimary";
 import ButtonSecondary from "@/shared/Button/ButtonSecondary";
 import NcImage from "@/shared/NcImage/NcImage";
 import ReviewItem from "@/components/ReviewItem";
-import detail21JPG from "@/images/products/detail3-1.webp";
-import detail22JPG from "@/images/products/detail3-2.webp";
-import detail23JPG from "@/images/products/detail3-3.webp";
-import detail24JPG from "@/images/products/detail3-4.webp";
+import detail21JPG from "@/images/products/full1.png";
+import detail22JPG from "@/images/products/full1-1.png";
+import detail23JPG from "@/images/products/full1-2.png";
+import detail24JPG from "@/images/products/full1-3.png";
 import { PRODUCTS } from "@/data/data";
 import IconDiscount from "@/components/IconDiscount";
 import NcInputNumber from "@/components/NcInputNumber";
@@ -192,40 +192,40 @@ const ProductDetailPage2 = ({}) => {
     if (!status) {
       return null;
     }
-    const CLASSES =
-      "text-sm flex items-center text-slate-700 text-slate-900 dark:text-slate-300";
-    if (status === "New in") {
-      return (
-        <div className={CLASSES}>
-          <SparklesIcon className="w-3.5 h-3.5" />
-          <span className="ml-1 leading-none">{status}</span>
-        </div>
-      );
-    }
-    if (status === "50% Discount") {
-      return (
-        <div className={CLASSES}>
-          <IconDiscount className="w-3.5 h-3.5" />
-          <span className="ml-1 leading-none">{status}</span>
-        </div>
-      );
-    }
-    if (status === "Sold Out") {
-      return (
-        <div className={CLASSES}>
-          <NoSymbolIcon className="w-3.5 h-3.5" />
-          <span className="ml-1 leading-none">{status}</span>
-        </div>
-      );
-    }
-    if (status === "limited edition") {
-      return (
-        <div className={CLASSES}>
-          <ClockIcon className="w-3.5 h-3.5" />
-          <span className="ml-1 leading-none">{status}</span>
-        </div>
-      );
-    }
+    // const CLASSES =
+    //   "text-sm flex items-center text-slate-700 text-slate-900 dark:text-slate-300";
+    // if (status === "New in") {
+    //   return (
+    //     <div className={CLASSES}>
+    //       <SparklesIcon className="w-3.5 h-3.5" />
+    //       <span className="ml-1 leading-none">{status}</span>
+    //     </div>
+    //   );
+    // }
+    // if (status === "50% Discount") {
+    //   return (
+    //     <div className={CLASSES}>
+    //       <IconDiscount className="w-3.5 h-3.5" />
+    //       <span className="ml-1 leading-none">{status}</span>
+    //     </div>
+    //   );
+    // }
+    // if (status === "Sold Out") {
+    //   return (
+    //     <div className={CLASSES}>
+    //       <NoSymbolIcon className="w-3.5 h-3.5" />
+    //       <span className="ml-1 leading-none">{status}</span>
+    //     </div>
+    //   );
+    // }
+    // if (status === "limited edition") {
+    //   return (
+    //     <div className={CLASSES}>
+    //       <ClockIcon className="w-3.5 h-3.5" />
+    //       <span className="ml-1 leading-none">{status}</span>
+    //     </div>
+    //   );
+    // }
     return null;
   };
 
@@ -240,29 +240,13 @@ const ProductDetailPage2 = ({}) => {
               <div className="flex text-2xl font-semibold">
                 ${PRICE.toFixed(2)}
               </div>
-
-              <a
-                href="#reviews"
-                className="flex items-center text-sm font-medium"
-              >
-                <div className="">
-                  <StarIcon className="w-5 h-5 pb-[1px] text-orange-400" />
-                </div>
-                <span className="ml-1.5 flex">
-                  <span>4.9 </span>
-                  <span className="mx-1.5">·</span>
-                  <span className="text-slate-700 dark:text-slate-400 underline">
-                    142 reviews
-                  </span>
-                </span>
-              </a>
             </div>
 
             {/* ---------- 3 VARIANTS AND SIZE LIST ----------  */}
-            <div className="mt-6 space-y-7 lg:space-y-8">
+            {/* <div className="mt-6 space-y-7 lg:space-y-8">
               <div className="">{renderVariants()}</div>
               <div className="">{renderSizeList()}</div>
-            </div>
+            </div> */}
           </div>
           {/*  ---------- 4  QTY AND ADD TO CART BUTTON */}
           <div className="flex space-x-3.5">
@@ -317,22 +301,7 @@ const ProductDetailPage2 = ({}) => {
             Heavy Weight Hoodie
           </h2>
           <div className="flex items-center mt-4 sm:mt-5">
-            <a
-              href="#reviews"
-              className="hidden sm:flex items-center text-sm font-medium "
-            >
-              <div className="">
-                <StarIcon className="w-5 h-5 pb-[1px] text-slate-800 dark:text-slate-200" />
-              </div>
-              <span className="ml-1.5">
-                <span>4.9</span>
-                <span className="mx-1.5">·</span>
-                <span className="text-slate-700 dark:text-slate-400 underline">
-                  142 reviews
-                </span>
-              </span>
-            </a>
-            <span className="hidden sm:block mx-2.5">·</span>
+            {/* <span className="hidden sm:block mx-2.5">·</span> */}
             {renderStatus()}
 
             <div className="ml-auto">
@@ -548,9 +517,9 @@ const ProductDetailPage2 = ({}) => {
       <div className="container pb-24 lg:pb-28 pt-14 space-y-14">
         <hr className="border-slate-200 dark:border-slate-700" />
 
-        {renderReviews()}
+        {/* {renderReviews()}
 
-        <hr className="border-slate-200 dark:border-slate-700" />
+        <hr className="border-slate-200 dark:border-slate-700" /> */}
 
         <SectionSliderProductCard
           heading="Customers also purchased"
