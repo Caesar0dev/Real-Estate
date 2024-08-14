@@ -24,46 +24,46 @@ const SectionGridMoreExplore: FC<SectionGridMoreExploreProps> = ({
 }) => {
   const [tabActive, setTabActive] = useState("Man");
 
-  const renderCard = (item: ExploreType) => {
-    switch (boxCard) {
-      case "box1":
-        return (
-          <CardCategory1 key={item.id} featuredImage={item.image} {...item} />
-        );
+  // const renderCard = (item: ExploreType) => {
+  //   switch (boxCard) {
+  //     case "box1":
+  //       return (
+  //         <CardCategory1 key={item.id} featuredImage={item.image} {...item} />
+  //       );
 
-      case "box4":
-        return (
-          <CardCategory4
-            bgSVG={item.svgBg}
-            featuredImage={item.image}
-            key={item.id}
-            color={item.color}
-            {...item}
-          />
-        );
-      case "box6":
-        return (
-          <CardCategory6
-            bgSVG={item.svgBg}
-            featuredImage={item.image}
-            key={item.id}
-            color={item.color}
-            {...item}
-          />
-        );
+  //     case "box4":
+  //       return (
+  //         <CardCategory4
+  //           bgSVG={item.svgBg}
+  //           featuredImage={item.image}
+  //           key={item.id}
+  //           color={item.color}
+  //           {...item}
+  //         />
+  //       );
+  //     case "box6":
+  //       return (
+  //         <CardCategory6
+  //           bgSVG={item.svgBg}
+  //           featuredImage={item.image}
+  //           key={item.id}
+  //           color={item.color}
+  //           {...item}
+  //         />
+  //       );
 
-      default:
-        return (
-          <CardCategory4
-            bgSVG={item.svgBg}
-            featuredImage={item.image}
-            key={item.id}
-            color={item.color}
-            {...item}
-          />
-        );
-    }
-  };
+  //     default:
+  //       return (
+  //         <CardCategory4
+  //           bgSVG={item.svgBg}
+  //           featuredImage={item.image}
+  //           key={item.id}
+  //           color={item.color}
+  //           {...item}
+  //         />
+  //       );
+  //   }
+  // };
 
   const renderHeading = () => {
     return (
@@ -144,10 +144,7 @@ const SectionGridMoreExplore: FC<SectionGridMoreExploreProps> = ({
               onClick={() => setTabActive(item.name)}
             >
               <div className="flex items-center justify-center space-x-1.5 sm:space-x-2.5 text-xs sm:text-sm ">
-                {/* <span
-                  className="inline-block"
-                  dangerouslySetInnerHTML={{ __html: item.icon }}
-                ></span> */}
+                
                 <span>{item.name}</span>
               </div>
             </NavItem2>
@@ -158,12 +155,14 @@ const SectionGridMoreExplore: FC<SectionGridMoreExploreProps> = ({
   };
 
   return (
-    <div className={`nc-SectionGridMoreExplore relative ${className}`}>
-      {renderHeading()}
-      <div className={`grid gap-4 md:gap-7 ${gridClassName}`}>
-        {data.map((item) => renderCard(item))}
-      </div>
-    </div>
+    <>
+      {/* <div className={`nc-SectionGridMoreExplore relative ${className}`}>
+        {renderHeading()}
+        <div className={`grid gap-4 md:gap-7 ${gridClassName}`}>
+          {data.map((item) => renderCard(item))}
+        </div>
+      </div> */}
+    </>
   );
 };
 
