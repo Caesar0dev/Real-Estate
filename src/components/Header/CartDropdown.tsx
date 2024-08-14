@@ -40,7 +40,7 @@ export default function CartDropdown() {
                 <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
                   <span>{`Natural`}</span>
                   <span className="mx-2 border-l border-slate-200 dark:border-slate-700 h-4"></span>
-                  <span>{"XL"}</span>
+                  <span>{"pending"}</span>
                 </p>
               </div>
               <Prices price={price} className="mt-0.5" />
@@ -130,7 +130,7 @@ export default function CartDropdown() {
               <div className="overflow-hidden rounded-2xl shadow-lg ring-1 ring-black/5 dark:ring-white/10">
                 <div className="relative bg-white dark:bg-neutral-800">
                   <div className="max-h-[60vh] p-5 overflow-y-auto hiddenScrollbar">
-                    <h3 className="text-xl font-semibold">Shopping cart</h3>
+                    <h3 className="text-xl font-semibold">House cart</h3>
                     <div className="divide-y divide-slate-100 dark:divide-slate-700">
                       {[PRODUCTS[0], PRODUCTS[1], PRODUCTS[2]].map(
                         (item, index) => renderProduct(item, index, close)
@@ -145,7 +145,7 @@ export default function CartDropdown() {
                           Shipping and taxes calculated at checkout.
                         </span>
                       </span>
-                      <span className="">$299.00</span>
+                      <span className="">$29900.85</span>
                     </p>
                     <div className="flex space-x-2 mt-5">
                       <ButtonSecondary

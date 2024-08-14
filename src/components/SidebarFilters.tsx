@@ -7,57 +7,51 @@ import Radio from "@/shared/Radio/Radio";
 import MySwitch from "@/components/MySwitch";
 
 // DEMO DATA
-const DATA_categories = [
+const HOME_categories = [
   {
-    name: "Backpacks",
+    name: "For Rent",
   },
   {
-    name: "Travel Bags",
+    name: "For Sell",
   },
   {
-    name: "Laptop Sleeves",
+    name: "Currently Renting",
   },
   {
-    name: "Organization",
+    name: "Sold",
   },
-  {
-    name: "Accessories",
-  },
+  // {
+  //   name: "Accessories",
+  // },
 ];
 
-const DATA_colors = [
-  { name: "White" },
-  { name: "Beige" },
-  { name: "Blue" },
-  { name: "Black" },
-  { name: "Brown" },
-  { name: "Green" },
-  { name: "Navy" },
+const HOME_types = [
+  { name: "Building" },
+  { name: "Apartment" },
+  { name: "Family Home" },
+  { name: "Villa Bay View" },
 ];
 
-const DATA_sizes = [
-  { name: "XS" },
-  { name: "S" },
-  { name: "M" },
-  { name: "L" },
-  { name: "XL" },
-  { name: "2XL" },
+const HOME_sizes = [
+  { name: "1" },
+  { name: "2" },
+  { name: "3" },
+  { name: "4" },
+  { name: "5" },
 ];
 
 const DATA_sortOrderRadios = [
-  { name: "Most Popular", id: "Most-Popular" },
-  { name: "Best Rating", id: "Best-Rating" },
   { name: "Newest", id: "Newest" },
   { name: "Price Low - Hight", id: "Price-low-hight" },
   { name: "Price Hight - Low", id: "Price-hight-low" },
 ];
 
-const PRICE_RANGE = [1, 500];
+const PRICE_RANGE = [10000, 1000000];
 //
 const SidebarFilters = () => {
   //
   const [isOnSale, setIsIsOnSale] = useState(true);
-  const [rangePrices, setRangePrices] = useState([100, 500]);
+  const [rangePrices, setRangePrices] = useState([300000, 900000]);
   const [categoriesState, setCategoriesState] = useState<string[]>([]);
   const [colorsState, setColorsState] = useState<string[]>([]);
   const [sizesState, setSizesState] = useState<string[]>([]);
@@ -89,7 +83,7 @@ const SidebarFilters = () => {
     return (
       <div className="relative flex flex-col pb-8 space-y-4">
         <h3 className="font-semibold mb-2.5">Categories</h3>
-        {DATA_categories.map((item) => (
+        {HOME_categories.map((item) => (
           <div key={item.name} className="">
             <Checkbox
               name={item.name}
@@ -106,11 +100,11 @@ const SidebarFilters = () => {
   };
 
   // OK
-  const renderTabsColor = () => {
+  const renderTabsType = () => {
     return (
       <div className="relative flex flex-col py-8 space-y-4">
-        <h3 className="font-semibold mb-2.5">Colors</h3>
-        {DATA_colors.map((item) => (
+        <h3 className="font-semibold mb-2.5">Types</h3>
+        {HOME_types.map((item) => (
           <div key={item.name} className="">
             <Checkbox
               sizeClassName="w-5 h-5"
@@ -130,8 +124,8 @@ const SidebarFilters = () => {
   const renderTabsSize = () => {
     return (
       <div className="relative flex flex-col py-8 space-y-4">
-        <h3 className="font-semibold mb-2.5">Sizes</h3>
-        {DATA_sizes.map((item) => (
+        <h3 className="font-semibold mb-2.5">Number of Room</h3>
+        {HOME_sizes.map((item) => (
           <div key={item.name} className="">
             <Checkbox
               name={item.name}
@@ -238,17 +232,17 @@ const SidebarFilters = () => {
   return (
     <div className="divide-y divide-slate-200 dark:divide-slate-700">
       {renderTabsCategories()}
-      {renderTabsColor()}
+      {renderTabsType()}
       {renderTabsSize()}
       {renderTabsPriceRage()}
-      <div className="py-8 pr-2">
+      {/* <div className="py-8 pr-2">
         <MySwitch
           label="On sale!"
           desc="Products currently on sale"
           enabled={isOnSale}
           onChange={setIsIsOnSale}
         />
-      </div>
+      </div> */}
       {renderTabsSortOrder()}
     </div>
   );
