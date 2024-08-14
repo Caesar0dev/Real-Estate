@@ -6,7 +6,8 @@ import {
   ClockIcon,
   SparklesIcon,
 } from "@heroicons/react/24/outline";
-import ButtonPrimary from "@/shared/Button/ButtonPrimary";
+import Button from "@/shared/Button/Button";
+import ButtonPrimary from "@/shared/Button/Button";
 import ButtonSecondary from "@/shared/Button/ButtonSecondary";
 import NcImage from "@/shared/NcImage/NcImage";
 import ReviewItem from "@/components/ReviewItem";
@@ -250,19 +251,22 @@ const ProductDetailPage2 = ({}) => {
           </div>
           {/*  ---------- 4  QTY AND ADD TO CART BUTTON */}
           <div className="flex space-x-3.5">
-            <div className="flex items-center justify-center bg-slate-100/70 dark:bg-slate-800/70 px-2 py-3 sm:p-3.5 rounded-full">
+            {/* <div className="flex items-center justify-center bg-slate-100/70 dark:bg-slate-800/70 px-2 py-3 sm:p-3.5 rounded-full">
               <NcInputNumber
                 defaultValue={qualitySelected}
                 onChange={setQualitySelected}
               />
-            </div>
-            <ButtonPrimary
-              className="flex-1 flex-shrink-0"
-              onClick={notifyAddTocart}
+            </div> */}
+            <Button
+              className="flex-1 flex-shrink-0 bg-sky-200"
             >
-              <BagIcon className="hidden sm:inline-block w-5 h-5 mb-0.5" />
-              <span className="ml-3">Add to cart</span>
-            </ButtonPrimary>
+              <span className="ml-3">Rent</span>
+            </Button>
+            <Button
+              className="flex-1 flex-shrink-0 bg-green-200"
+            >
+              <span className="ml-3">Buy</span>
+            </Button>
           </div>
 
           {/* SUM */}
@@ -271,8 +275,8 @@ const ProductDetailPage2 = ({}) => {
               <div className="flex justify-between text-slate-600 dark:text-slate-300">
                 <span className="flex">
                   <span>{`$${PRICE.toFixed(2)}  `}</span>
-                  <span className="mx-2">x</span>
-                  <span>{`${qualitySelected} `}</span>
+                  {/* <span className="mx-2">x</span>
+                  <span>{`${qualitySelected} `}</span> */}
                 </span>
 
                 <span>{`$${(PRICE * qualitySelected).toFixed(2)}`}</span>
@@ -348,7 +352,7 @@ const ProductDetailPage2 = ({}) => {
           </ul>
         </div>
         {/* ---------- 6 ----------  */}
-        <Policy />
+        {/* <Policy /> */}
       </div>
     );
   };
