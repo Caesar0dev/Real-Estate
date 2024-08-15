@@ -88,7 +88,11 @@ const MainNav2Logged: FC<MainNav2LoggedProps> = () => {
 
         <div className="flex-1 flex items-center justify-end text-slate-700 dark:text-slate-100">
           <a href="/login" className="inline-flex items-center text-sm lg:text-[15px] font-medium text-slate-700 dark:text-slate-300 py-2.5 px-4 xl:px-5 rounded-full hover:text-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 dark:hover:text-slate-200">
-            Login/Signup
+            Login
+          </a>
+          /
+          <a href="/signup" className="inline-flex items-center text-sm lg:text-[15px] font-medium text-slate-700 dark:text-slate-300 py-2.5 px-4 xl:px-5 rounded-full hover:text-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 dark:hover:text-slate-200">
+            Signup
           </a>
           {!showSearchForm && (
             <button
