@@ -14,63 +14,47 @@ import MySwitch from "@/components/MySwitch";
 // DEMO DATA
 const DATA_categories = [
   {
-    name: "NestInvest : ",
+    name: "For Rent",
   },
   {
-    name: "Sale",
+    name: "For Sell",
   },
   {
-    name: "Backpacks",
+    name: "Currently Renting",
   },
   {
-    name: "Travel Bags",
-  },
-  {
-    name: "Laptop Sleeves",
-  },
-  {
-    name: "Organization",
-  },
-  {
-    name: "Accessories",
+    name: "Sold",
   },
 ];
 
 const DATA_colors = [
-  { name: "White" },
-  { name: "Beige" },
-  { name: "Blue" },
-  { name: "Black" },
-  { name: "Brown" },
-  { name: "Green" },
-  { name: "Navy" },
+  { name: "Building" },
+  { name: "Apartment" },
+  { name: "Family Home" },
+  { name: "Villa Bay View" },
 ];
 
 const DATA_sizes = [
-  { name: "XXS" },
-  { name: "XS" },
-  { name: "S" },
-  { name: "M" },
-  { name: "L" },
-  { name: "XL" },
-  { name: "2XL" },
+  { name: "1" },
+  { name: "2" },
+  { name: "3" },
+  { name: "4" },
+  { name: "5" },
 ];
 
 const DATA_sortOrderRadios = [
-  { name: "Most Popular", id: "Most-Popular" },
-  { name: "Best Rating", id: "Best-Rating" },
   { name: "Newest", id: "Newest" },
   { name: "Price Low - Hight", id: "Price-low-hight" },
   { name: "Price Hight - Low", id: "Price-hight-low" },
 ];
 
-const PRICE_RANGE = [1, 500];
+const PRICE_RANGE = [10000, 1000000];
 //
 const TabFilters = () => {
   const [isOpenMoreFilter, setisOpenMoreFilter] = useState(false);
   //
   const [isOnSale, setIsIsOnSale] = useState(false);
-  const [rangePrices, setRangePrices] = useState([100, 500]);
+  const [rangePrices, setRangePrices] = useState([200000, 800000]);
   const [categoriesState, setCategoriesState] = useState<string[]>([]);
   const [colorsState, setColorsState] = useState<string[]>([]);
   const [sizesState, setSizesState] = useState<string[]>([]);
@@ -445,7 +429,7 @@ const TabFilters = () => {
                 />
               </svg>
 
-              <span className="ml-2">Colors</span>
+              <span className="ml-2">Types</span>
               {!colorsState.length ? (
                 <ChevronDownIcon className="w-4 h-4 ml-3" />
               ) : (
@@ -1136,7 +1120,7 @@ const TabFilters = () => {
         {renderTabsCategories()}
         {renderTabsColor()}
         {renderTabsSize()}
-        {renderTabIsOnsale()}
+        {/* {renderTabIsOnsale()} */}
         <div className="!ml-auto">{renderTabsSortOrder()}</div>
       </div>
 
