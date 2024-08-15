@@ -84,7 +84,7 @@ const PageSignUp = () => {
             <div className="absolute left-0 w-full top-1/2 transform -translate-y-1/2 border border-neutral-100 dark:border-neutral-800"></div>
           </div>
           {/* FORM */}
-          <div className="grid gap-3">
+          {/* <div className="grid gap-3">
             {loginSocials.map((item, index) => (
               <a
                 key={index}
@@ -102,7 +102,7 @@ const PageSignUp = () => {
                 </h3>
               </a>
             ))}
-          </div>
+          </div> */}
           {/* ==== */}
           <span className="block text-center text-neutral-700 dark:text-neutral-300">
             Already have an account? {` `}
