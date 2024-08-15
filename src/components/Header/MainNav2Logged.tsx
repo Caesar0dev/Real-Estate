@@ -99,7 +99,7 @@ const MainNav2Logged: FC<MainNav2LoggedProps> = () => {
             </button>
           )}
           <AvatarDropdown />
-          <CartDropdown />
+          {/* <CartDropdown /> */}
         </div>
       </div>
     );

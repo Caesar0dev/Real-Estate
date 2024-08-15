@@ -20,7 +20,7 @@ const pages: {
   },
   {
     name: "Save lists",
-    link: "/account-savelists",
+    link: "/account-kyc",
   },
   {
     name: " My order",
@@ -40,8 +40,12 @@ const CommonLayout: FC<CommonLayoutProps> = ({ children }) => {
   const pathname = usePathname();
 
   return (
+  
     <div className="nc-AccountCommonLayout container">
       <div className="mt-14 sm:mt-20">
+
+      {pathname !== "/account-kyc" && (
+    
         <div className="max-w-4xl mx-auto">
           <div className="max-w-2xl">
             <h2 className="text-3xl xl:text-4xl font-semibold">Account</h2>
@@ -52,6 +56,7 @@ const CommonLayout: FC<CommonLayoutProps> = ({ children }) => {
               ciseco@gmail.com · Los Angeles, CA
             </span>
           </div>
+
           <hr className="mt-10 border-slate-200 dark:border-slate-700"></hr>
 
           <div className="flex space-x-8 md:space-x-14 overflow-x-auto hiddenScrollbar">
@@ -73,11 +78,17 @@ const CommonLayout: FC<CommonLayoutProps> = ({ children }) => {
           </div>
           <hr className="border-slate-200 dark:border-slate-700"></hr>
         </div>
+
+      )}
+      {pathname === "/account-kyc" && (
+        <h2 className="text-3xl xl:text-4xl font-semibold">Id Verification</h2>
+      )}
       </div>
       <div className="max-w-4xl mx-auto pt-14 sm:pt-26 pb-24 lg:pb-32">
         {children}
       </div>
     </div>
+
   );
 };
 
