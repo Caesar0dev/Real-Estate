@@ -231,10 +231,10 @@ const CheckoutPage = () => {
             <Link href={"#"} className="">
               Homepage
             </Link>
-            <span className="text-xs mx-1 sm:mx-1.5">/</span>
-            <Link href={"/collection-2"} className="">
+            {/* <span className="text-xs mx-1 sm:mx-1.5">/</span> */}
+            {/* <Link href={"c"} className="">
               Clothing Categories
-            </Link>
+            </Link> */}
             <span className="text-xs mx-1 sm:mx-1.5">/</span>
             <span className="underline">Checkout</span>
           </div>
