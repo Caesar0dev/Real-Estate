@@ -35,7 +35,7 @@ export default function MarketplaceCard() {
       <div className="w-full bg-white rounded-lg shadow-lg">
         {List_Categories.map((item, index) => {
             return (
-                <div className="bg-gray-800 flex justify-between px-10 py-2 rounded-t-lg mb-10">
+                <div key={index} className="bg-gray-800 flex justify-between px-10 py-2 rounded-t-lg mb-10">
                     <p className=' text-white text-2xl'>{item.category_title}</p>
                     <div className=''>
                         <span className="ml-5 text-sky-500 px-4 py-1 bg-white rounded-full inline-block align-middle">{item.location}</span>
