@@ -91,17 +91,6 @@ export default function MarketplaceCard() {
                 </div>
             )
         })}
-        {/* Header Section */}
-        {/* <div className="bg-gray-800 flex justify-between px-10 py-2 rounded-t-lg">
-            <p className=' text-white text-2xl'>REG S: NON-U.S. ONLY</p>
-            <div className=''>
-                <span className="ml-5 text-sky-500 px-4 py-1 bg-white rounded-full inline-block align-middle">Panama</span>
-                <span className="ml-5 text-sky-500 px-4 py-1 bg-white rounded-full inline-block align-middle">RealE</span>
-            </div>
-        </div> */}
-        {/* <div className="flex items-center space-x-2 mt-2">
-        </div> */}
-
         
       </div>
 
