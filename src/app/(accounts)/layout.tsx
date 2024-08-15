@@ -20,7 +20,7 @@ const pages: {
   },
   {
     name: "Save lists",
-    link: "/account-kyc",
+    link: "/account-list",
   },
   {
     name: " My order",
@@ -81,7 +81,7 @@ const CommonLayout: FC<CommonLayoutProps> = ({ children }) => {
 
       )}
       {pathname === "/account-kyc" && (
-        <h2 className="text-3xl xl:text-4xl font-semibold">Id Verification</h2>
+        <h2 className="text-3xl xl:text-4xl font-semibold">ID Verification</h2>
       )}
       </div>
       <div className="max-w-4xl mx-auto pt-14 sm:pt-26 pb-24 lg:pb-32">

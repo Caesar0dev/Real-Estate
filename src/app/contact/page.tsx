@@ -14,7 +14,7 @@ const info = [
   },
   {
     title: "💌 EMAIL",
-    desc: "nc.example@example.com",
+    desc: "real.estate@example.com",
   },
   {
     title: "☎ PHONE",

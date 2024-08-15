@@ -19,7 +19,7 @@ const AccountBilling = () => {
           <a href="##">Learn more</a>
         </span>
         <div className="pt-10">
-          <ButtonPrimary>Add payout mothod</ButtonPrimary>
+          <ButtonPrimary>Go Wallet</ButtonPrimary>
         </div>
       </div>
     </div>
