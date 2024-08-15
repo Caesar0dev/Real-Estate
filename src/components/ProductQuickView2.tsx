@@ -14,9 +14,9 @@ import {
 import IconDiscount from "@/components/IconDiscount";
 import Prices from "@/components/Prices";
 import toast from "react-hot-toast";
-import detail1JPG from "@/images/products/detail1.jpg";
-import detail2JPG from "@/images/products/detail2.jpg";
-import detail3JPG from "@/images/products/detail3.jpg";
+import detail1JPG from "@/images/products/detail1.png";
+import detail2JPG from "@/images/products/detail2.png";
+import detail3JPG from "@/images/products/detail3.png";
 import NotifyAddTocart from "./NotifyAddTocart";
 import Image from "next/image";
 import Link from "next/link";
@@ -56,12 +56,12 @@ const ProductQuickView2: FC<ProductQuickView2Props> = ({ className = "" }) => {
     return (
       <div>
         <label htmlFor="">
-          <span className="text-sm font-medium">
+          {/* <span className="text-sm font-medium">
             Color:
             <span className="ml-1 font-semibold">
               {variants[variantActive].name}
             </span>
-          </span>
+          </span> */}
         </label>
         <div className="flex mt-3">
           {variants.map((variant, index) => (
