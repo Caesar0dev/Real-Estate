@@ -1,7 +1,8 @@
 "use client";
 
 import React, { FC, useState } from "react";
-import detail1JPG from "@/images/products/detail1.png";
+import detail1JPG from "@/images/HIW2img.png";
+
 import Image from "next/image";
 import BuyerInfo from "@/components/BuyerInfo";
 
