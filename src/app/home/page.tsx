@@ -14,7 +14,7 @@ import SectionGridFeatureItems from "@/components/SectionGridFeatureItems";
 function PageHome() {
   return (
     <div className="nc-PageHome relative overflow-hidden">
-      <div className="container px-4">
+      <div className="container pt-10">
         <SectionHero3 />
       </div>
 
