@@ -14,16 +14,16 @@ const SectionHero3: FC<SectionHero3Props> = ({ className = "" }) => {
       className={`nc-SectionHero3 relative ${className}`}
       data-nc-id="SectionHero3"
     >
-      <div className="relative pt-8 lg:pt-0 lg:absolute z-10 inset-x-0 top-[10%] sm:top-[5%]  container">
-        <div className="flex flex-col items-start max-w-lg xl:max-w-2xl space-y-5 xl:space-y-8 ">
+      <div className="relative pt-8 lg:pt-0 lg:absolute z-10 inset-x-0 top-[10%] sm:top-[5%] pl-10">
+        <div className="flex flex-col items-start max-w-lg xl:max-w-2xl space-y-5 xl:space-y-8 w-1/2">
           <h2 className="font-bold text-white text-3xl sm:text-4xl md:text-4xl xl:text-6xl 2xl:text-7xl !leading-[115%] ">
             <span className="text-sky-400">NestInvest:</span><br />
             <span className="text-black">Revolutionizing Real Estate</span>
           </h2>
-          <span className="md:text-sx font-semibold text-black text-neutral-900">
+          <span className="block text-slate-600 dark:text-slate-400 text-sm leading-6">
             In a constantly evolving real estate market, NestInvest was born out of the need to adapt and improve the current system. We understand the challenges and frustrations of traditional methods and have created a new and innovative approach to make real estate more accessible and transparent for all.
           </span>
-          <span className="md:text-sx font-semibold text-black text-neutral-900">
+          <span className="block text-slate-600 dark:text-slate-400 text-sm leading-6">
             Our mission is to revolutionize the real estate industry by simplifying financing processes and providing an unmatched user experience. NestInvest is the modern solution to a transforming market, bringing innovations that surpass the limitations of traditional systems.
           </span>
           <div className="sm:pt-4">
@@ -39,11 +39,11 @@ const SectionHero3: FC<SectionHero3Props> = ({ className = "" }) => {
 
       <div className="relative z-[1] lg:aspect-w-16 lg:aspect-h-8 2xl:aspect-h-7">
         <div className=" ">
-          <div className="mt-5 lg:mt-0 lg:absolute right-0 bottom-0 top-0 w-5/12 ml-auto">
+          <div className="mt-5 lg:mt-0 lg:absolute right-0 bottom-0 top-0 w-1/2 ml-auto">
             <Image
               sizes="(width: 50%)"
               fill
-              className="w-full object-right-bottom "
+              className="w-full object-right-bottom rounded-xl"
               src={imageRightPng2}
               alt=""
               priority
