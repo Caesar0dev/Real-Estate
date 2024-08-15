@@ -16,9 +16,9 @@ import IconDiscount from "@/components/IconDiscount";
 import Prices from "@/components/Prices";
 import toast from "react-hot-toast";
 import SectionSliderProductCard from "@/components/SectionSliderProductCard";
-import detail1JPG from "@/images/products/detail1.jpg";
-import detail2JPG from "@/images/products/detail2.jpg";
-import detail3JPG from "@/images/products/detail3.jpg";
+import detail1JPG from "@/images/products/detail1.png";
+import detail2JPG from "@/images/products/detail2.png";
+import detail3JPG from "@/images/products/detail3.png";
 import Policy from "./Policy";
 import ReviewItem from "@/components/ReviewItem";
 import ButtonSecondary from "@/shared/Button/ButtonSecondary";
@@ -63,15 +63,15 @@ const ProductDetailPage = () => {
     return (
       <div>
         <label htmlFor="">
-          <span className="text-sm font-medium">
+          {/* <span className="text-sm font-medium">
             Color:
             <span className="ml-1 font-semibold">
               {variants[variantActive].name}
             </span>
-          </span>
+          </span> */}
         </label>
         <div className="flex mt-3">
-          {variants.map((variant, index) => (
+          {/* {variants.map((variant, index) => (
             <div
               key={index}
               onClick={() => setVariantActive(index)}
@@ -96,7 +96,7 @@ const ProductDetailPage = () => {
                 }}
               ></div>
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
     );
@@ -211,7 +211,7 @@ const ProductDetailPage = () => {
             {/* <div className="flex text-xl font-semibold">$112.00</div> */}
             <Prices
               contentClass="py-1 px-2 md:py-1.5 md:px-3 text-lg font-semibold"
-              price={112}
+              price={112000}
             />
 
             <div className="h-7 border-l border-slate-300 dark:border-slate-700"></div>
@@ -222,13 +222,13 @@ const ProductDetailPage = () => {
                 className="flex items-center text-sm font-medium"
               >
                 <StarIcon className="w-5 h-5 pb-[1px] text-yellow-400" />
-                <div className="ml-1.5 flex">
+                {/* <div className="ml-1.5 flex">
                   <span>4.9</span>
                   <span className="block mx-2">·</span>
                   <span className="text-slate-600 dark:text-slate-400 underline">
                     142 reviews
                   </span>
-                </div>
+                </div> */}
               </a>
               <span className="hidden sm:block mx-2.5">·</span>
               <div className="hidden sm:flex items-center text-sm">
@@ -240,23 +240,29 @@ const ProductDetailPage = () => {
         </div>
 
         {/* ---------- 3 VARIANTS AND SIZE LIST ----------  */}
-        <div className="">{renderVariants()}</div>
-        <div className="">{renderSizeList()}</div>
+        {/* <div className="">{renderVariants()}</div> */}
+        {/* <div className="">{renderSizeList()}</div> */}
 
         {/*  ---------- 4  QTY AND ADD TO CART BUTTON */}
         <div className="flex space-x-3.5">
-          <div className="flex items-center justify-center bg-slate-100/70 dark:bg-slate-800/70 px-2 py-3 sm:p-3.5 rounded-full">
+          {/* <div className="flex items-center justify-center bg-slate-100/70 dark:bg-slate-800/70 px-2 py-3 sm:p-3.5 rounded-full">
             <NcInputNumber
               defaultValue={qualitySelected}
               onChange={setQualitySelected}
             />
-          </div>
+          </div> */}
           <ButtonPrimary
             className="flex-1 flex-shrink-0"
             onClick={notifyAddTocart}
           >
             <BagIcon className="hidden sm:inline-block w-5 h-5 mb-0.5" />
-            <span className="ml-3">Add to cart</span>
+            <span className="ml-3">Rent</span>
+          </ButtonPrimary><ButtonPrimary
+            className="flex-1 flex-shrink-0"
+            onClick={notifyAddTocart}
+          >
+            <BagIcon className="hidden sm:inline-block w-5 h-5 mb-0.5" />
+            <span className="ml-3">Buy</span>
           </ButtonPrimary>
         </div>
 
@@ -309,13 +315,13 @@ const ProductDetailPage = () => {
     return (
       <div className="">
         {/* HEADING */}
-        <h2 className="text-2xl font-semibold flex items-center">
+        {/* <h2 className="text-2xl font-semibold flex items-center">
           <StarIcon className="w-7 h-7 mb-0.5" />
           <span className="ml-1.5"> 4,87 · 142 Reviews</span>
-        </h2>
+        </h2> */}
 
         {/* comment */}
-        <div className="mt-10">
+        {/* <div className="mt-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-11 gap-x-28">
             <ReviewItem />
             <ReviewItem
@@ -353,7 +359,7 @@ const ProductDetailPage = () => {
           >
             Show me all 142 reviews
           </ButtonSecondary>
-        </div>
+        </div> */}
       </div>
     );
   };
@@ -408,17 +414,17 @@ const ProductDetailPage = () => {
 
         {/* DETAIL AND REVIEW */}
         <div className="mt-12 sm:mt-16 space-y-10 sm:space-y-16">
-          <div className="block xl:hidden">
+          {/* <div className="block xl:hidden">
             <Policy />
-          </div>
+          </div> */}
 
           {renderDetailSection()}
 
           <hr className="border-slate-200 dark:border-slate-700" />
 
-          {renderReviews()}
+          {/* {renderReviews()} */}
 
-          <hr className="border-slate-200 dark:border-slate-700" />
+          {/* <hr className="border-slate-200 dark:border-slate-700" /> */}
 
           {/* OTHER SECTION */}
           <SectionSliderProductCard
