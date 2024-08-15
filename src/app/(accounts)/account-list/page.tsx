@@ -24,8 +24,8 @@ const AccountOrder = () => {
               <div>
                 <h3 className="text-base font-medium line-clamp-1">{name}</h3>
                 <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
-                  <span>{"Admin"}</span>
-                  {/* <span className="mx-2 border-l border-slate-200 dark:border-slate-700 h-4"></span>
+                  {/* <span>{"Natural"}</span>
+                  <span className="mx-2 border-l border-slate-200 dark:border-slate-700 h-4"></span>
                   <span>{"XL"}</span> */}
                 </p>
               </div>
@@ -34,19 +34,19 @@ const AccountOrder = () => {
           </div>
           <div className="flex flex-1 items-end justify-between text-sm">
             <p className="text-gray-500 dark:text-slate-400 flex items-center">
-              {/* <span className="hidden sm:inline-block">Frozen</span> */}
-              {/* <span className="inline-block sm:hidden">x</span>
-              <span className="ml-2">1</span> */}
+              {/* <span className="hidden sm:inline-block">Qty</span> */}
+              {/* <span className="inline-block sm:hidden">x</span> */}
+              {/* <span className="ml-2">1</span> */}
             </p>
 
-            <div className="flex">
+            {/* <div className="flex">
               <button
                 type="button"
                 className="font-medium text-indigo-600 dark:text-primary-500 "
               >
-                Frozen
+                Leave review
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -58,11 +58,11 @@ const AccountOrder = () => {
       <div className="border border-slate-200 dark:border-slate-700 rounded-lg overflow-hidden z-0">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center p-4 sm:p-8 bg-slate-50 dark:bg-slate-500/5">
           <div>
-            <p className="text-lg font-semibold">#WU3746HGG12</p>
+            <p className="text-lg font-semibold">#HG5489GUY12</p>
             <p className="text-slate-500 dark:text-slate-400 text-sm mt-1.5 sm:mt-2">
-              <span>Aug 2, 2023</span>
-              {/* <span className="mx-2">·</span>
-              <span className="text-primary-500">Delivered</span> */}
+              <span>Aug 8, 2023</span>
+              <span className="mx-2">·</span>
+              {/* <span className="text-primary-500">Delivered</span> */}
             </p>
           </div>
           <div className="mt-3 sm:mt-0">
@@ -70,7 +70,7 @@ const AccountOrder = () => {
               sizeClass="py-2.5 px-4 sm:px-6"
               fontSize="text-sm font-medium"
             >
-              View Order
+              View List
             </ButtonSecondary>
           </div>
         </div>
@@ -84,7 +84,7 @@ const AccountOrder = () => {
   return (
     <div className="space-y-10 sm:space-y-12">
       {/* HEADING */}
-      <h2 className="text-2xl sm:text-3xl font-semibold">Order History</h2>
+      <h2 className="text-2xl sm:text-3xl font-semibold">My List</h2>
       {renderOrder()}
       {/* {renderOrder()} */}
     </div>
