@@ -53,7 +53,7 @@ const PageLogin = () => {
               </span>
               <Input type="password" className="mt-1" />
             </label>
-            <ButtonPrimary type="submit">Continue</ButtonPrimary>
+            <ButtonPrimary >Continue</ButtonPrimary>
           </form>
           {/* OR */}
           <div className="relative text-center">
