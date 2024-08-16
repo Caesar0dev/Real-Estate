@@ -9,15 +9,15 @@ import MarketplaceCard from "@/components/MarketplaceCard/MarketplaceCard1";
 
 const LIST_IMAGES_DEMO = [detail1JPG];
 
-const ProductDetailPage = () => {
+const MarketplacePage = () => {
 
   return (
-    <div className={`nc-ProductDetailPage `}>
+    <div className={`nc-MarketplacePage `}>
       <main className="container mt-5 lg:mt-11">
         <div className="lg:flex justify-center">
           <div className="w-full lg:w-[100%] ">
             <div className="relative">
-              <div className="aspect-w-16 aspect-h-16 relative">
+              <div className="relative">
                 <MarketplaceCard />
               </div>
             </div>
@@ -33,4 +33,4 @@ const ProductDetailPage = () => {
   );
 };
 
-export default ProductDetailPage;
+export default MarketplacePage;

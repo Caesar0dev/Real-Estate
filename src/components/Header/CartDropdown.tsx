@@ -24,7 +24,7 @@ export default function CartDropdown() {
           <Link
             onClick={close}
             className="absolute inset-0"
-            href={"/product-detail"}
+            href={"/properties"}
           />
         </div>
 
@@ -33,7 +33,7 @@ export default function CartDropdown() {
             <div className="flex justify-between ">
               <div>
                 <h3 className="text-base font-medium ">
-                  <Link onClick={close} href={"/product-detail"}>
+                  <Link onClick={close} href={"/properties"}>
                     {name}
                   </Link>
                 </h3>
