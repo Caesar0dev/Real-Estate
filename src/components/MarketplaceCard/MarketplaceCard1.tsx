@@ -16,7 +16,8 @@ export default function MarketplaceCard() {
             expected_income: "6-20",
             income_start_date: "N/A",
             income_per_token: "N/A",
-            footer_text: "REG S: NON-U.S. ONLY"
+            footer_text: "REG S: NON-U.S. ONLY",
+            status: "",
         },
         {
             category_title: "SOLD OUT",
@@ -28,7 +29,8 @@ export default function MarketplaceCard() {
             expected_income: "9.37",
             income_start_date: "October 1, 2024",
             income_per_token: "$ 4.72 / year",
-            footer_text: "REG S: NON-U.S. ONLY"
+            footer_text: "REG S: NON-U.S. ONLY",
+            status: "SOLD",
         },
         {
             category_title: "SOLD OUT",
@@ -40,76 +42,72 @@ export default function MarketplaceCard() {
             expected_income: "9.42",
             income_start_date: "October 1, 2024",
             income_per_token: "$ 4.80 / year",
-            footer_text: "REG S: NON-U.S. ONLY"
+            footer_text: "REG S: NON-U.S. ONLY",
+            status: "SOLD",
         },
     ];
 
     return (
-        <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4 grid grid-cols-1 gap-4">
+        <div className="min-h-screen bg-gray-100 p-4">
             {List_Categories.map((item, index) => {
                 return (
-                    <div key={index} className="w-full bg-white rounded-lg shadow-lg">
-                        <div className="bg-gray-800 flex justify-between px-10 py-2 rounded-t-lg">
-                            <p className=' text-white text-2xl'>{item.category_title}</p>
-                            <div className=''>
-                                <span className="ml-5 text-sky-500 px-4 py-1 bg-white rounded-full inline-block align-middle">{item.location}</span>
-                                <span className="ml-5 text-sky-500 px-4 py-1 bg-white rounded-full inline-block align-middle">{item.site}</span>
+                    <div key={index} className="bg-white rounded-lg shadow-lg mb-4">
+                        <div className="bg-gray-800 px-4 py-2 rounded-t-lg flex justify-between items-center">
+                            <p className='text-white text-lg'>{item.category_title}</p>
+                            <div className='flex space-x-2'>
+                                <span className="text-sky-500 px-3 py-1 bg-white rounded-full">{item.location}</span>
+                                <span className="text-sky-500 px-3 py-1 bg-white rounded-full">{item.site}</span>
                             </div>
                         </div>
-                        <div className='flex'>
+                        <div className='flex flex-col md:flex-row'>
                             {/* Image Section */}
-                            <div className="relative w-7/12">
+                            <div className="relative w-full md:w-7/12">
                                 <Image
                                     src={LIST_IMAGES_DEMO[0]}
                                     alt="Property"
-                                    className="w-full h-80 object-cover rounded-t-lg"
+                                    className="w-full h-80 object-cover"
                                 />
-                                <p className="absolute bottom-2 left-4 text-white text-xs bg-black bg-opacity-50 p-0 rounded">Promotional Image. Final appearance may vary in design.</p>
+                                <p className="absolute bottom-2 left-4 text-white text-7xl bg-red-400 p-1 rounded">{item.status}</p>
                             </div>
 
                             {/* Content Section */}
-                            <div className="p-6 w-5/12">
-                            <div className="justify-between items-center">
-                                <div>
+                            <div className="p-2 md:p-4 w-full md:w-5/12">
+                                <div className="mb-2">
                                     <h2 className="text-gray-700 font-semibold text-lg">{item.address}</h2>
                                 </div>
-                                <div className="flex justify-center mt-2">
-                                    <div className='px-10 text-center'>
-                                        <p className='text-xl '>TOTAL PRICE</p>
-                                        <p className="text-gray-700 font-semibold text-3xl ">$ {item.total_price}</p>
+                                <div className="flex md:flex-row justify-center mb-4">
+                                    <div className='mb-2 md:mb-0 px-6 text-center'>
+                                        <p className='text-lg'>TOTAL PRICE</p>
+                                        <p className="text-gray-700 font-semibold text-2xl">$ {item.total_price}</p>
                                     </div>
-                                    <div className='px-10 text-center border-l-2 border-black'>
-                                        <p className='text-xl '>TOKEN PRICE</p>
-                                        <p className="text-red-500 font-semibold text-3xl ">$ {item.token_price}</p>
+                                    <div className='border-l-2 border-black px-6 text-center'>
+                                        <p className='text-lg'>TOKEN PRICE</p>
+                                        <p className="text-red-500 font-semibold text-2xl">$ {item.token_price}</p>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div className="mt-4 space-y-1">
-                                <div className=" items-center text-sky-700 text-lg">
+                                <div className="mb-2">
                                     <div className='flex justify-between'>
-                                        <p className="">Expected Income</p>
-                                        <p className="">{item.expected_income}%</p>
+                                        <p className="text-lg">Expected Income</p>
+                                        <p className="text-lg">{item.expected_income}%</p>
                                     </div>
-                                    <p className="text-xs text-black italic">Not including capital appreciation</p>
+                                    <p className="text-xs text-gray-700 italic">Not including capital appreciation</p>
                                 </div>
-                                <div className="flex justify-between items-center border-t-2 border-black pt-2">
-                                    <p className="text-black font-semibold">Income Start Date</p>
+                                <div className="flex justify-between items-center border-t-2 border-gray-300 pt-2 mb-2">
+                                    <p className="text-lg font-semibold">Income Start Date</p>
                                     <p className="text-gray-700">{item.income_start_date}</p>
                                 </div>
-                                <div className="flex justify-between items-center border-t-2 border-black pt-2">
-                                    <p className="text-black font-semibold">Income Per Token</p>
+                                <div className="flex justify-between items-center border-t-2 border-gray-300 pt-2">
+                                    <p className="text-lg font-semibold">Income Per Token</p>
                                     <p className="text-gray-700">{item.income_per_token}</p>
                                 </div>
-                                <div className="text-black text-center pt-0">
+                                <div className="text-black text-center pt-2">
                                     <p>{item.footer_text}</p>
                                 </div>
-                            </div>
                             </div>
                         </div>
                     </div>
                 )
             })}
         </div>
-  );
+    );
 }

@@ -34,12 +34,6 @@ function PageHome() {
         <SectionSliderLargeProduct />
 
         {/* SECTION */}
-        {/* <div className="relative py-24 lg:py-32">
-          <BackgroundSection />
-          <SectionGridMoreExplore data={DEMO_MORE_EXPLORE_DATA_2} />
-        </div> */}
-
-        {/* SECTION */}
         <SectionGridFeatureItems data={SPORT_PRODUCTS} />
 
         {/* SECTION */}

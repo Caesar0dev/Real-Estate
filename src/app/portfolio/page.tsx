@@ -28,7 +28,7 @@ const CheckoutPage = () => {
 
     return (
       <div key={index} className="relative flex py-7 first:pt-0 last:pb-0">
-        <div className="relative h-36 w-24 sm:w-28 flex-shrink-0 overflow-hidden rounded-xl bg-slate-100">
+        {/* <div className="relative h-36 w-24 sm:w-28 flex-shrink-0 overflow-hidden rounded-xl bg-slate-100">
           <Image
             src={image}
             fill
@@ -36,19 +36,19 @@ const CheckoutPage = () => {
             className="h-full w-full object-contain object-center"
             sizes="150px"
           />
-          <Link href="/product-detail" className="absolute inset-0"></Link>
-        </div>
+          <Link href="/properties" className="absolute inset-0"></Link>
+        </div> */}
 
         <div className="ml-3 sm:ml-6 flex flex-1 flex-col">
           <div>
             <div className="flex justify-between ">
               <div className="flex-[1.5] ">
                 <h3 className="text-base font-semibold">
-                  <Link href="/product-detail">{name}</Link>
+                  <Link href="/properties">{name}</Link>
                 </h3>
                 <div className="mt-1.5 sm:mt-2.5 flex text-sm text-slate-600 dark:text-slate-300">
                   <div className="flex items-center space-x-1.5">
-                    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none">
+                    {/* <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none">
                       <path
                         d="M7.01 18.0001L3 13.9901C1.66 12.6501 1.66 11.32 3 9.98004L9.68 3.30005L17.03 10.6501C17.4 11.0201 17.4 11.6201 17.03 11.9901L11.01 18.0101C9.69 19.3301 8.35 19.3301 7.01 18.0001Z"
                         stroke="currentColor"
@@ -88,7 +88,7 @@ const CheckoutPage = () => {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                       />
-                    </svg>
+                    </svg> */}
 
                     <span>{`Black`}</span>
                   </div>

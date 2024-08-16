@@ -17,7 +17,7 @@ export const MEGAMENU_TEMPLATES: NavItemType[] = [
     children: [
       { id: ncNanoId(), href: "/properties", name: "Category Page 1" },
       // { id: ncNanoId(), href: "/collection-2", name: "Category Page 2" },
-      { id: ncNanoId(), href: "/product-detail", name: "Product Page 1" },
+      { id: ncNanoId(), href: "/properties", name: "Product Page 1" },
       { id: ncNanoId(), href: "/product-detail-2", name: "Product Page 2" },
       { id: ncNanoId(), href: "/cart", name: "Cart Page" },
       { id: ncNanoId(), href: "/checkout", name: "Checkout Page" },
@@ -78,13 +78,13 @@ export const MEGAMENU_TEMPLATES: NavItemType[] = [
 //   },
 //   {
 //     id: ncNanoId(),
-//     href: "/product-detail",
+//     href: "/properties",
 //     name: "Product Pages",
 //     type: "dropdown",
 //     children: [
 //       {
 //         id: ncNanoId(),
-//         href: "/product-detail",
+//         href: "/properties",
 //         name: "Product detail 1",
 //       },
 //       {
@@ -181,24 +181,34 @@ export const NAVIGATION_DEMO_2: NavItemType[] = [
   },
   {
     id: ncNanoId(),
-    href: "/properties",
-    name: "Properties",
+    href: "/collateralizetokens",
+    name: "Collateralize Tokens",
   },
+  // {
+  //   id: ncNanoId(),
+  //   href: "/properties",
+  //   name: "Properties",
+  // },
   {
     id: ncNanoId(),
-    href: "/contact",
-    name: "Contact Us",
+    href: "/portfolio",
+    name: "Sell Tokens",
   },
+  // {
+  //   id: ncNanoId(),
+  //   href: "/contact",
+  //   name: "Contact Us",
+  // },
   {
     id: ncNanoId(),
     href: "/about",
     name: "About Us",
   },
-  {
-    id: ncNanoId(),
-    href: "/blog",
-    name: "Blog",
-  },
+  // {
+  //   id: ncNanoId(),
+  //   href: "/blog",
+  //   name: "Blog",
+  // },
   // {
   //   id: ncNanoId(),
   //   href: "/properties",
