@@ -59,9 +59,9 @@ const CollateralizeTokens = ({}) => {
                         </label>
                         <label className="block shadow-md p-5 w-full rounded-lg">
                             <Label className="font-bold">Assets to supply</Label>
-                            <table className="table-auto text-xs w-full text-center">
+                            <table className="table-auto text-xs w-full text-center mt-5">
                                 <thead>
-                                    <tr className="border-black border-black">
+                                    <tr className="border-gray-300 border-b-2 py-2 text-gray-400 text-sx font-thin">
                                         <th>Assets</th>
                                         <th>Wallet balance</th>
                                         <th>APY</th>
@@ -70,21 +70,21 @@ const CollateralizeTokens = ({}) => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    <tr className="border-gray-300 border-b-2 py-2">
                                         <td>USDC</td>
                                         <td>0</td>
                                         <td>7.44 %</td>
                                         <td>check</td>
                                         <td>Suppy Details</td>
                                     </tr>
-                                    <tr>
+                                    <tr className="border-gray-300 border-b-2 py-2">
                                         <td>XDAI</td>
                                         <td>0</td>
                                         <td>7.02 %</td>
                                         <td>check</td>
                                         <td>Suppy Details</td>
                                     </tr>
-                                    <tr>
+                                    <tr className="border-gray-300 border-b-2 py-2">
                                         <td>WXDAI</td>
                                         <td>0</td>
                                         <td>7.02%</td>
@@ -99,41 +99,99 @@ const CollateralizeTokens = ({}) => {
                             </div>
                         </label>
                         <label className="block shadow-md p-5 w-full rounded-lg">
-                            <Label>Your asset supplies</Label>
+                            <Label>Properties to supply</Label>
+                            <Input
+                                type="text"
+                                className="mt-1"
+                            />
+                            <div className="mt-5 flex justify-between">
+                                <div className="inline-block align-middle ml-2">
+                                    <input
+                                        type="checkbox"
+                                        className=""
+                                    />
+                                    <span className=" inline-block align-middle ml-2 text-gray-400 text-sm">Hide zero balances</span>
+                                </div>
+                                <span className="rounded-lg bg-slate-800 p-2 text-white">MULTI WITHDRAW</span>
+                            </div>
+                            <table className="table-auto text-xs w-full text-center mt-5">
+                                <thead>
+                                    <tr className="border-gray-300 border-b-2 py-2 text-gray-400 text-sx font-thin">
+                                        <th>Assets</th>
+                                        <th>Wallet balance</th>
+                                        <th>APY</th>
+                                        <th>Can be collateral</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-gray-300 border-b-2 py-2">
+                                        <td>USDC</td>
+                                        <td>0</td>
+                                        <td>7.44 %</td>
+                                        <td>check</td>
+                                        <td>Suppy Details</td>
+                                    </tr>
+                                    <tr className="border-gray-300 border-b-2 py-2">
+                                        <td>XDAI</td>
+                                        <td>0</td>
+                                        <td>7.02 %</td>
+                                        <td>check</td>
+                                        <td>Suppy Details</td>
+                                    </tr>
+                                    <tr className="border-gray-300 border-b-2 py-2">
+                                        <td>WXDAI</td>
+                                        <td>0</td>
+                                        <td>7.02%</td>
+                                        <td>check</td>
+                                        <td>Suppy Details</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                        </label>
+                    </div>
+                    <div>
+                        <label className="block shadow-md p-5 w-full rounded-lg">
+                            <Label className="font-bold">Your borrows</Label>
                             <div className="text-gray-400 text-sm mt-6">
                                 Nothing supplied yet
                             </div>
                         </label>
-                    </div>
-                    <div>
-                        <form className="grid grid-cols-1 gap-6" action="#" method="post">
-                            <label className="block">
-                                <Label>Full name</Label>
-
-                                <Input
-                                placeholder="Example Doe"
-                                type="text"
-                                className="mt-1"
-                                />
-                            </label>
-                            <label className="block">
-                                <Label>Email address</Label>
-
-                                <Input
-                                type="email"
-                                placeholder="example@example.com"
-                                className="mt-1"
-                                />
-                            </label>
-                            <label className="block">
-                                <Label>Message</Label>
-
-                                <Textarea className="mt-1" rows={6} />
-                            </label>
-                            <div>
-                                <ButtonPrimary type="submit">Send Message</ButtonPrimary>
+                        <label className="block shadow-md p-5 w-full rounded-lg">
+                            <Label className="font-bold">Assets to borrow</Label>
+                            <div className="text-gray-400 text-sm mt-6">
+                                To borrow you need to supply any asset to be used as collateral.
                             </div>
-                        </form>
+                            <table className="table-auto text-xs w-full text-center mt-5">
+                                <thead>
+                                    <tr className="border-gray-300 border-b-2 py-2 text-gray-400 text-sx font-thin">
+                                        <th>Assets</th>
+                                        <th>Available</th>
+                                        <th>APY, variable</th>
+                                        <th>APY, stable</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-gray-300 border-b-2 py-2">
+                                        <td>USDC</td>
+                                        <td>0</td>
+                                        <td>10.18 %</td>
+                                        <td>-</td>
+                                        <td>Borrow Details</td>
+                                    </tr>
+                                    <tr className="border-gray-300 border-b-2 py-2">
+                                        <td>XDAI</td>
+                                        <td>0</td>
+                                        <td>9.66 %</td>
+                                        <td>-</td>
+                                        <td>Borrow Details</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                        </label>
                     </div>
                 </div>
             </div>
