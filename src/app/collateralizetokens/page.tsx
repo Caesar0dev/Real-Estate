@@ -94,9 +94,6 @@ const CollateralizeTokens = ({}) => {
                                 </tbody>
                             </table>
                             
-                            <div className="text-gray-400 text-sm mt-6">
-                                Nothing supplied yet
-                            </div>
                         </label>
                         <label className="block shadow-md p-5 w-full rounded-lg">
                             <Label>Properties to supply</Label>
