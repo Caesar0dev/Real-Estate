@@ -40,7 +40,7 @@ const PageLogin = () => {
               </span>
               <Input
                 type="email"
-                placeholder="example@example.com"
+                placeholder="example@gmail.com"
                 className="mt-1"
               />
             </label>
