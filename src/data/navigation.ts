@@ -194,16 +194,16 @@ export const NAVIGATION_DEMO_2: NavItemType[] = [
     href: "/portfolio",
     name: "Sell Tokens",
   },
-  // {
-  //   id: ncNanoId(),
-  //   href: "/contact",
-  //   name: "Contact Us",
-  // },
   {
     id: ncNanoId(),
-    href: "/about",
-    name: "About Us",
+    href: "/contact",
+    name: "Contact Us",
   },
+  // {
+  //   id: ncNanoId(),
+  //   href: "/about",
+  //   name: "About Us",
+  // },
   // {
   //   id: ncNanoId(),
   //   href: "/blog",
