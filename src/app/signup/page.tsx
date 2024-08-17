@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import facebookSvg from "@/images/Facebook.svg";
 import twitterSvg from "@/images/Twitter.svg";
 import googleSvg from "@/images/Google.svg";
@@ -6,6 +6,7 @@ import Input from "@/shared/Input/Input";
 import ButtonPrimary from "@/shared/Button/ButtonPrimary";
 import Image from "next/image";
 import Link from "next/link";
+import Radio from "@/shared/Radio/Radio";
 
 const loginSocials = [
   {
@@ -73,6 +74,60 @@ const PageSignUp = () => {
                 Confirm Password
               </span>
               <Input type="password" className="mt-1" />
+            </label>
+            <label className="block">
+              <span className="flex justify-between items-center text-neutral-800 dark:text-neutral-200">
+                ARE YOU A RESIDENT OR CITIZEN OF THE UNITED STATES OR ITS TERRITORIES?
+              </span>
+              <div className="flex justify-center ">
+                <Radio
+                  id={"Yes"}
+                  key={"Yes"}
+                  name="radioNameSort"
+                  label={"Yes"}
+                  defaultChecked={true}
+                  sizeClassName="w-5 h-5"
+                  // onChange={}
+                  className="!text-sm mx-5"
+                />
+                <Radio
+                  id={"No"}
+                  key={"No"}
+                  name="radioNameSort"
+                  label={"No"}
+                  defaultChecked={true}
+                  sizeClassName="w-5 h-5"
+                  // onChange={}
+                  className="!text-sm mx-5"
+                />
+              </div>
+            </label>
+            <label className="block">
+              <span className="flex justify-between items-center text-neutral-800 dark:text-neutral-200">
+                ARE YOU REGISTERING TO INVEST AS A BUSINESS ACCOUNT?
+              </span>
+              <div className="flex justify-center ">
+                <Radio
+                  id={"Yes"}
+                  key={"Yes"}
+                  name="radioNameSort"
+                  label={"Yes"}
+                  defaultChecked={true}
+                  sizeClassName="w-5 h-5"
+                  // onChange={}
+                  className="!text-sm mx-5"
+                />
+                <Radio
+                  id={"No"}
+                  key={"No"}
+                  name="radioNameSort"
+                  label={"No"}
+                  defaultChecked={true}
+                  sizeClassName="w-5 h-5"
+                  // onChange={}
+                  className="!text-sm mx-5"
+                />
+              </div>
             </label>
             <ButtonPrimary>Continue</ButtonPrimary>
           </form>
