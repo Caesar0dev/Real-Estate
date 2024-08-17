@@ -116,31 +116,23 @@ const CollateralizeTokens = ({}) => {
                                     <tr className="border-gray-300 border-b-2 py-2 text-gray-400 text-sx font-thin">
                                         <th>Assets</th>
                                         <th>Wallet balance</th>
-                                        <th>APY</th>
-                                        <th>Can be collateral</th>
                                         <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr className="border-gray-300 border-b-2 py-2">
-                                        <td>USDC</td>
+                                        <td>3323 Waverly</td>
                                         <td>0</td>
-                                        <td>7.44 %</td>
-                                        <td>check</td>
                                         <td>Suppy Details</td>
                                     </tr>
                                     <tr className="border-gray-300 border-b-2 py-2">
-                                        <td>XDAI</td>
+                                        <td>1 Holding Belvidere</td>
                                         <td>0</td>
-                                        <td>7.02 %</td>
-                                        <td>check</td>
                                         <td>Suppy Details</td>
                                     </tr>
                                     <tr className="border-gray-300 border-b-2 py-2">
-                                        <td>WXDAI</td>
+                                        <td>12091 Montrose</td>
                                         <td>0</td>
-                                        <td>7.02%</td>
-                                        <td>check</td>
                                         <td>Suppy Details</td>
                                     </tr>
                                 </tbody>
