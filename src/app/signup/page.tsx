@@ -81,9 +81,9 @@ const PageSignUp = () => {
               </span>
               <div className="flex justify-center ">
                 <Radio
-                  id={"Yes"}
-                  key={"Yes"}
-                  name="radioNameSort"
+                  id={"Citizen_Yes"}
+                  key={"Citizen_Yes"}
+                  name="citizencheck"
                   label={"Yes"}
                   defaultChecked={true}
                   sizeClassName="w-5 h-5"
@@ -91,11 +91,11 @@ const PageSignUp = () => {
                   className="!text-sm mx-5"
                 />
                 <Radio
-                  id={"No"}
-                  key={"No"}
-                  name="radioNameSort"
+                  id={"Citizen_No"}
+                  key={"Citizen_No"}
+                  name="citizencheck"
                   label={"No"}
-                  defaultChecked={true}
+                  defaultChecked={false}
                   sizeClassName="w-5 h-5"
                   // onChange={}
                   className="!text-sm mx-5"
@@ -108,19 +108,19 @@ const PageSignUp = () => {
               </span>
               <div className="flex justify-center ">
                 <Radio
-                  id={"Yes"}
-                  key={"Yes"}
-                  name="radioNameSort"
+                  id={"Business_Yes"}
+                  key={"Business_Yes"}
+                  name="businesscheck"
                   label={"Yes"}
-                  defaultChecked={true}
+                  defaultChecked={false}
                   sizeClassName="w-5 h-5"
                   // onChange={}
                   className="!text-sm mx-5"
                 />
                 <Radio
-                  id={"No"}
-                  key={"No"}
-                  name="radioNameSort"
+                  id={"Business_No"}
+                  key={"Business_No"}
+                  name="businesscheck"
                   label={"No"}
                   defaultChecked={true}
                   sizeClassName="w-5 h-5"
